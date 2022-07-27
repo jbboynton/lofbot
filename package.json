@@ -8,9 +8,10 @@
     "url": "https://github.com/jbboynton/lofbot.git"
   },
   "scripts": {
-    "build": "npm run lint && node src/index.js",
-    "dev": "DEV=true nodemon src/index.js --exec \"npm run lint && node\"",
-    "lint": "eslint \"**/*.js\""
+    "start": "DEV=true nodemon src/index.js --exec \"npm run lint && node\"",
+    "lint": "eslint \"**/*.js\"",
+    "serve:prod": "node src/index.js",
+    "serve:dev": "DEV=true node src/index.js"
   },
   "devDependencies": {
     "dotenv": "^16.0.1",
