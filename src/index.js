@@ -1,4 +1,6 @@
-require("dotenv").config()
+const path = (process.env.DEV ? ".env.dev" : ".env");
+require("dotenv").config({ path: path });
+
 const token = process.env.DISCORD_TOKEN;
 const clientID = process.env.DISCORD_CLIENT_ID;
 const guildID = process.env.DISCORD_GUILD_ID;
