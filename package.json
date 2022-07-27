@@ -1,0 +1,22 @@
+{
+  "name": "lofbot",
+  "version": "0.1.0",
+  "description": "#livelaughlof",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbboynton/lofbot.git"
+  },
+  "scripts": {
+    "start": "nodemon src/index.js --exec \"npm run lint && node\"",
+    "lint": "eslint **/*.js"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "eslint": "^8.20.0",
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "discord.js": "^13.9.1"
+  }
+}
