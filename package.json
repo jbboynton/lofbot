@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "nodemon src/index.js --exec \"npm run lint && node\"",
-    "lint": "eslint **/*.js"
+    "lint": "eslint \"**/*.js\""
   },
   "devDependencies": {
     "dotenv": "^16.0.1",
@@ -17,6 +17,7 @@
     "nodemon": "^2.0.19"
   },
   "dependencies": {
+    "@discordjs/rest": "1.0.0",
     "discord.js": "^13.9.1"
   }
 }

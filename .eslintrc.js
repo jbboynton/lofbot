@@ -2,10 +2,11 @@ module.exports = {
   "extends": "eslint:recommended",
   "env": {
     "node": true,
-    "es2021": true
+    "es2021": true,
   },
+  "ignorePatterns": ["node_modules"],
   "parserOptions": {
-    "ecmaVersion": "latest"
+    "ecmaVersion": "latest",
   },
   "rules": {
     "comma-dangle": [
@@ -15,10 +16,10 @@ module.exports = {
         "objects": "always-multiline",
         "imports": "always-multiline",
         "exports": "always-multiline",
-        "functions": "ignore"
-      }
+        "functions": "ignore",
+      },
     ],
     "indent": ["warn", 2],
-    "no-console": 0
-  }
+    "no-console": 0,
+  },
 }
